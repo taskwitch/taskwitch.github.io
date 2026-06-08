@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on taskwitch</title>
-    <link>https://example.org/posts/</link>
+    <link>https://taskwitch.github.io/posts/</link>
     <description>Recent content in Posts on taskwitch</description>
     <generator>Hugo</generator>
     <language>en-ca</language>
     <lastBuildDate>Mon, 08 Jun 2026 13:02:28 +0800</lastBuildDate>
-    <atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://taskwitch.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello World</title>
-      <link>https://example.org/posts/hello-world/</link>
+      <link>https://taskwitch.github.io/posts/hello-world/</link>
       <pubDate>Mon, 08 Jun 2026 13:02:28 +0800</pubDate>
-      <guid>https://example.org/posts/hello-world/</guid>
+      <guid>https://taskwitch.github.io/posts/hello-world/</guid>
       <description>&lt;p&gt;This is my first post. I am testing the &lt;a href=&#34;https://github.com/gohugoio/hugo&#34;&gt;Hugo&lt;/a&gt; framework and the &lt;a href=&#34;https://github.com/adityatelange/hugo-PaperMod&#34;&gt;PaperMod&lt;/a&gt; theme, as well as getting familiar with the setup (mostly code highlighting, markdown formatting, and equations &amp;#x1f606;).&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;In this very first post (on the website built on graduation from high school), I will share an interesting problem that underlies an AP Computer Science A question my friend asked me during my senior year in high school.&lt;/p&gt;
