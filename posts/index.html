@@ -174,7 +174,8 @@
   </header>
   <div class="entry-content">
     <p>This blog entry is written on an iPad running Code App by thebaselab. I am recording a way to uncomfortably edit or draft something then post to my blog just in case I forget to bring my laptop.
-Setting Up Code App Generate ssh key pairs and upload the public key to Github; Clone your blog repo, git equivalent on Code App is lg2; Github account mail and password or PAT may be required Writing Blogs Create your blog entry markdown in repo.git/content/posts Paste the following template into the editor --- title: draft: false date: --- Generate timestamp using </p>
+Setting Up Code App Generate ssh key pairs and upload the public key to Github using ssh-keygen on your Code App terminal; Clone your blog repo, git equivalent on Code App is lg2; Github account mail and password or PAT may be required Writing Blogs Create your blog entry markdown in repo.git/content/posts Paste the following template into the editor --- title: draft: false date: --- Generate timestamp using date &#43;&#39;%Y-%m-%dT%H:%M:%S%z&#39; and paste into the template - Copy and paste using the GUI instead of command &#43; C/V. Save, lg2 add ., lg2 commit, and lg2 push. Github Action will automatically build and deploy the site. Remark You won’t want to write blogs on an iPad.
+...</p>
   </div>
   <footer class="entry-footer">
 

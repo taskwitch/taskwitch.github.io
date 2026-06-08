@@ -16,7 +16,7 @@
       <description>&lt;p&gt;This blog entry is written on an iPad running &lt;a href=&#34;https://apps.apple.com/cn/app/code-app/id1512938504?l=en-GB$0&#34;&gt;Code App by thebaselab&lt;/a&gt;. I am recording a way to &lt;del&gt;uncomfortably&lt;/del&gt; edit or draft something then post to my blog just in case I forget to bring my laptop.&lt;/p&gt;
 &lt;h2 id=&#34;setting-up-code-app&#34;&gt;Setting Up Code App&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Generate ssh key pairs and upload the public key to Github;&lt;/li&gt;
+&lt;li&gt;Generate ssh key pairs and upload the public key to Github using &lt;code&gt;ssh-keygen&lt;/code&gt; on your Code App terminal;&lt;/li&gt;
 &lt;li&gt;Clone your blog repo, &lt;code&gt;git&lt;/code&gt; equivalent on Code App is &lt;code&gt;lg2&lt;/code&gt;;
 &lt;ul&gt;
 &lt;li&gt;Github account mail and password or PAT may be required&lt;/li&gt;
@@ -33,8 +33,14 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;date&lt;/span&gt;: 
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;Generate timestamp using&lt;/li&gt;
-&lt;/ol&gt;</description>
+&lt;li&gt;Generate timestamp using
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;date +&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;%Y-%m-%dT%H:%M:%S%z&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;and paste into the template
+- Copy and paste using the GUI instead of command + C/V.&lt;/li&gt;
+&lt;li&gt;Save, &lt;code&gt;lg2 add .&lt;/code&gt;, &lt;code&gt;lg2 commit&lt;/code&gt;, and &lt;code&gt;lg2 push&lt;/code&gt;. Github Action will automatically build and deploy the site.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;remark&#34;&gt;Remark&lt;/h2&gt;
+&lt;p&gt;You won&amp;rsquo;t want to write blogs on an iPad.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hello World</title>
