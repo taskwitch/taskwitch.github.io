@@ -68,10 +68,10 @@
 &lt;p&gt;Personal mail: binrays752 (at) gmail (dot) com&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Hello World</title>
-      <link>https://taskwitch.github.io/posts/hello-world/</link>
+      <title>An Interesting AP Computer Science A Question</title>
+      <link>https://taskwitch.github.io/posts/an-interesting-ap-csa-question/</link>
       <pubDate>Mon, 08 Jun 2026 13:02:28 +0800</pubDate>
-      <guid>https://taskwitch.github.io/posts/hello-world/</guid>
+      <guid>https://taskwitch.github.io/posts/an-interesting-ap-csa-question/</guid>
       <description>&lt;p&gt;This is my first post. I am testing the &lt;a href=&#34;https://github.com/gohugoio/hugo&#34;&gt;Hugo&lt;/a&gt; framework and the &lt;a href=&#34;https://github.com/adityatelange/hugo-PaperMod&#34;&gt;PaperMod&lt;/a&gt; theme, as well as getting familiar with the setup (mostly code highlighting, markdown formatting, and equations &amp;#x1f606;).&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;In this very first post (on the website built on graduation from high school), I will share an interesting problem that underlies an AP Computer Science A question my friend asked me during my senior year in high school.&lt;/p&gt;
