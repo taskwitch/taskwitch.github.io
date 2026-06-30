@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Classroom Parser Webapp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <div>
+            <p class="eyebrow">AP Classroom Parser</p>
+            <h1>Scoring Guide Generator</h1>
+        </div>
+        <nav class="menu" aria-label="Main menu">
+            <a href="#generator">Generator</a>
+            <a href="#guide">User Guide</a>
+            <a href="#preview">Preview</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="generator" class="panel generator-panel">
+            <div class="controls">
+                <label>
+                    Data type
+                    <select id="data-type">
+                        <option value="quiz">College Board AP Quiz</option>
+                        <option value="result">College Board AP Result</option>
+                        <option value="sat">College Board SAT</option>
+                        <option value="td">TestDaily SAT</option>
+                    </select>
+                </label>
+                <label>
+                    Subset
+                    <select id="subset">
+                        <option value="full">Full</option>
+                        <option value="wrong">Wrong answers only</option>
+                    </select>
+                </label>
+                <label>
+                    Custom title
+                    <input id="title" type="text" placeholder="Optional">
+                </label>
+                <label class="file-picker">
+                    JSON file
+                    <input id="json-file" type="file" accept=".json,application/json">
+                </label>
+            </div>
+
+            <label class="json-input">
+                JSON input
+                <textarea id="json-input" spellcheck="false" placeholder="Paste cached AP Classroom, SAT, or TestDaily JSON here."></textarea>
+            </label>
+
+            <div class="actions">
+                <button id="generate-button" type="button">Generate guide</button>
+                <button id="clear-button" type="button" class="secondary">Clear</button>
+                <a id="download-link" class="button-link disabled" download="scoring_guide.html" aria-disabled="true">Download HTML</a>
+            </div>
+            <p id="status" class="status" role="status"></p>
+        </section>
+
+        <section id="guide" class="panel guide-panel" aria-labelledby="guide-title">
+            <h2 id="guide-title">User Guide</h2>
+            <div id="readme-guide" class="readme-content"></div>
+        </section>
+
+        <section id="preview" class="panel preview-panel" aria-labelledby="preview-title">
+            <h2 id="preview-title">Preview</h2>
+            <iframe id="preview-frame" title="Generated scoring guide preview"></iframe>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

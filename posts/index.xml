@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on taskwitch</title><link>https://taskwitch.github.io/posts/</link><description>Recent content in Posts on taskwitch</description><generator>Hugo</generator><language>en-ca</language><lastBuildDate>Tue, 30 Jun 2026 15:19:30 +0800</lastBuildDate><atom:link href="https://taskwitch.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>My Exodus</title><link>https://taskwitch.github.io/posts/my-exodus/</link><pubDate>Tue, 30 Jun 2026 15:19:30 +0800</pubDate><guid>https://taskwitch.github.io/posts/my-exodus/</guid><description>&lt;p&gt;When she boarded the plane for her university in the Western Hemisphere, it felt like her own personal &lt;em&gt;Exodus&lt;/em&gt;—finally free to breathe without someone counting each breath, to dream without permission, to simply be herself where even the sunrise would arrive hours before anyone back home opened their eyes to judge another day.&lt;/p&gt;</description></item><item><title>How to put the most bricks in a box?</title><link>https://taskwitch.github.io/posts/bricks-in-the-box/</link><pubDate>Fri, 26 Jun 2026 12:55:20 +0800</pubDate><guid>https://taskwitch.github.io/posts/bricks-in-the-box/</guid><description>&lt;p&gt;A question I saw in my sibling&amp;rsquo;s primary school math homework leads to the following generalization:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Find the maximum number of $l\times w\times h$ bricks one can pack into a $L\times W\times H$ box.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;where $l, w, h, L, W, H$ are some given constants (of course for a primary school student).&lt;/p&gt;
+&lt;p&gt;We assume all faces of the bricks must be parallel to the box face, and all lengths are integers.&lt;/p&gt;</description></item><item><title>Writing Hugo Blogs on iPad</title><link>https://taskwitch.github.io/posts/writing-blogs-on-ipad/</link><pubDate>Mon, 08 Jun 2026 19:51:37 +0800</pubDate><guid>https://taskwitch.github.io/posts/writing-blogs-on-ipad/</guid><description>&lt;p&gt;This blog entry is written on an iPad running &lt;a href="https://apps.apple.com/cn/app/code-app/id1512938504?l=en-GB$0"&gt;Code App by thebaselab&lt;/a&gt;. I am recording a way to &lt;del&gt;uncomfortably&lt;/del&gt; edit or draft something then post to my blog just in case I forget to bring my laptop.&lt;/p&gt;
+&lt;h2 id="setting-up-code-app"&gt;Setting Up Code App&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Generate ssh key pairs and upload the public key to Github using &lt;code&gt;ssh-keygen&lt;/code&gt; on your Code App terminal;&lt;/li&gt;
+&lt;li&gt;Clone your blog repo, &lt;code&gt;git&lt;/code&gt; equivalent on Code App is &lt;code&gt;lg2&lt;/code&gt;;
+&lt;ul&gt;
+&lt;li&gt;Github account mail and password or PAT may be required&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="writing-blogs"&gt;Writing Blogs&lt;/h2&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;Create your blog entry markdown in &lt;code&gt;repo.git/content/posts&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Paste the following template into the editor
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;title&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;draft&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;date&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Generate timestamp using
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;date +&lt;span style="color:#e6db74"&gt;&amp;#39;%Y-%m-%dT%H:%M:%S%z&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;and paste into the template
+- Copy and paste using the GUI instead of command + C/V.&lt;/li&gt;
+&lt;li&gt;Save, &lt;code&gt;lg2 add .&lt;/code&gt;, &lt;code&gt;lg2 commit&lt;/code&gt;, and &lt;code&gt;lg2 push&lt;/code&gt;. Github Action will automatically build and deploy the site.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="remark"&gt;Remark&lt;/h2&gt;
+&lt;p&gt;You won&amp;rsquo;t want to write blogs on an iPad.&lt;/p&gt;</description></item><item><title>An Interesting AP Computer Science A Question</title><link>https://taskwitch.github.io/posts/an-interesting-ap-csa-question/</link><pubDate>Mon, 08 Jun 2026 13:02:28 +0800</pubDate><guid>https://taskwitch.github.io/posts/an-interesting-ap-csa-question/</guid><description>&lt;p&gt;This is my first post. I am testing the &lt;a href="https://github.com/gohugoio/hugo"&gt;Hugo&lt;/a&gt; framework and the &lt;a href="https://github.com/adityatelange/hugo-PaperMod"&gt;PaperMod&lt;/a&gt; theme, as well as getting familiar with the setup (mostly code highlighting, markdown formatting, and equations &amp;#x1f606;).&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;In this very first post (on the website built on graduation from high school), I will share an interesting problem that underlies an AP Computer Science A question my friend asked me during my senior year in high school.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;True or false: will &lt;code&gt;i&lt;/code&gt; sometimes equal 3?&lt;/p&gt;</description></item></channel></rss>
