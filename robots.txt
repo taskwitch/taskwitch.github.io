@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://taskwitch.github.io/sitemap.xml
