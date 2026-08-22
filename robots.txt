@@ -1,0 +1,162 @@
+User-agent: *
+Disallow:
+
+# AI / LLM crawlers and training-data collectors — disallowed per this site's
+# AI training restriction. See https://taskwitch.github.io/privacy-policy/
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: OAI-SearchBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Claude-User
+Disallow: /
+
+User-agent: Claude-SearchBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: Meta-ExternalFetcher
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: Perplexity-User
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: cohere-training-data-crawler
+Disallow: /
+
+User-agent: AI2Bot
+Disallow: /
+
+User-agent: Ai2Bot-Dolma
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: Timpibot
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: Omgili
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: Webzio-Extended
+Disallow: /
+
+# ===== ByteDance (Bytespider / Doubao) =====
+User-agent: Bytespider
+Disallow: /
+ 
+User-agent: Bytedance
+Disallow: /
+ 
+User-agent: Doubao
+Disallow: /
+ 
+# ===== Baidu (search + ERNIE/Yiyan AI) =====
+User-agent: Baiduspider
+Disallow: /
+ 
+User-agent: Baiduspider-render
+Disallow: /
+ 
+User-agent: ERNIEBot
+Disallow: /
+ 
+User-agent: YiyanBot
+Disallow: /
+ 
+# ===== DeepSeek =====
+User-agent: DeepSeekBot
+Disallow: /
+ 
+User-agent: deepseek
+Disallow: /
+ 
+# ===== Zhipu AI / ChatGLM =====
+User-agent: ChatGLM-Spider
+Disallow: /
+ 
+User-agent: ChatGLM
+Disallow: /
+ 
+# ===== Alibaba / Qwen =====
+User-agent: Qwenbot
+Disallow: /
+ 
+User-agent: AlibabaBot
+Disallow: /
+ 
+# ===== Huawei (PetalBot / PanGu) =====
+User-agent: PetalBot
+Disallow: /
+ 
+User-agent: PanguBot
+Disallow: /
+ 
+# ===== Sogou =====
+User-agent: Sogou web spider
+Disallow: /
+ 
+User-agent: Sogou-spider
+Disallow: /
+ 
+# ===== Qihoo 360 =====
+User-agent: 360Spider
+Disallow: /
+ 
+User-agent: HaoSouSpider
+Disallow: /
+ 
+# ===== Youdao/Sogou-affiliated =====
+User-agent: YisouSpider
+Disallow: /
+
+Sitemap: https://taskwitch.github.io/sitemap.xml

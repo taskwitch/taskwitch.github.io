@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timezone Converter</title>
+    <meta name="description" content="A vintage-styled timezone converter with a world map and shareable links.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="title-wrap">
+            <p class="eyebrow">Timezone Converter</p>
+            <h1 id="page-title" class="page-title" tabindex="0" role="button" title="Click to edit">Timezone Converter</h1>
+            <input type="text" id="page-title-input" class="page-title-input" hidden aria-label="Edit page title">
+        </div>
+    </header>
+
+    <main>
+        <section class="panel converter-panel" aria-label="Timezone converter">
+            <div class="tz-column" id="source-column">
+                <h2 class="tz-column-title">From</h2>
+                <div class="tz-picker" data-picker="src">
+                    <label>
+                        Timezone
+                        <input type="text" id="src-tz-input" class="tz-picker-input" role="combobox" aria-expanded="false" aria-controls="src-tz-results" aria-autocomplete="list" autocomplete="off" placeholder="Search city, airport, or UTC offset&hellip;">
+                    </label>
+                    <ul class="tz-results" id="src-tz-results" role="listbox" aria-label="Source timezone results" hidden></ul>
+                </div>
+                <label>
+                    Date
+                    <input id="src-date" type="date">
+                </label>
+                <label>
+                    Time
+                    <input id="src-time" type="time">
+                </label>
+            </div>
+
+            <div class="tz-swap">
+                <button id="swap-button" type="button" class="secondary" title="Swap source and destination" aria-label="Swap source and destination">&#8646;</button>
+            </div>
+
+            <div class="tz-column" id="dest-column">
+                <h2 class="tz-column-title">To</h2>
+                <div class="tz-picker" data-picker="dst">
+                    <label>
+                        Timezone
+                        <input type="text" id="dst-tz-input" class="tz-picker-input" role="combobox" aria-expanded="false" aria-controls="dst-tz-results" aria-autocomplete="list" autocomplete="off" placeholder="Search city, airport, or UTC offset&hellip;">
+                    </label>
+                    <ul class="tz-results" id="dst-tz-results" role="listbox" aria-label="Destination timezone results" hidden></ul>
+                </div>
+                <div class="result-card" id="result-card">
+                    <p class="result-time" id="result-time">&mdash;</p>
+                    <p class="result-meta" id="result-meta">&nbsp;</p>
+                </div>
+                <p class="field-label">Share</p>
+                <div class="link-box" id="link-box">
+                    <code class="link-box-url" id="link-url"></code>
+                    <button type="button" class="link-box-copy secondary" id="copy-link-button" title="Copy link" aria-label="Copy link">Copy</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel map-panel" aria-label="Timezone map">
+            <div class="map-toolbar">
+                <div class="map-target-toggle" role="group" aria-label="Map click sets">
+                    <button type="button" class="pill-toggle" id="map-target-src" data-target="src">Setting: Source</button>
+                    <button type="button" class="pill-toggle" id="map-target-dst" data-target="dst">Setting: Destination</button>
+                </div>
+                <p class="map-hint">Click the map to set the highlighted timezone.</p>
+            </div>
+            <div class="map-container" id="map-container">
+                <div id="map-root"></div>
+                <div class="map-tooltip" id="map-tooltip" hidden></div>
+            </div>
+        </section>
+
+        <p id="status" class="status" role="status"></p>
+    </main>
+
+    <script src="tz-data.js"></script>
+    <script src="tz-convert.js"></script>
+    <script src="solar.js"></script>
+    <script src="url-state.js"></script>
+    <script src="map.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
